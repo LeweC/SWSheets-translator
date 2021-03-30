@@ -1,0 +1,15 @@
+{
+  "name": "P&P Eng-Deu",
+  "version": "3.0",
+  "description": "Specific Transaltion",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://swsheets.com/c/*"],
+    "js": ["contentscript.js"]
+  }
+],
+  "manifest_version": 3
+}
